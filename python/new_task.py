@@ -15,5 +15,6 @@ channel.basic_publish(exchange='',
                       properties=pika.BasicProperties(
                          delivery_mode = 2, # make message persistent
                       ))
+#comment
 print(" [x] Sent %r" % message)
 connection.close()
